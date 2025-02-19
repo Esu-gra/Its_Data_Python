@@ -140,3 +140,8 @@ def molt_lista(l: list,n:float)-> list:
          l1+=[el*n]#l1.append(el*n)
     return l1
 print(molt_lista(l,2))
+
+#####################################################
+
+
+s=

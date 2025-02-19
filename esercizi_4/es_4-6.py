@@ -13,6 +13,11 @@
 # for i in mult_tre:
 #     print(i)
 
+
+
+
+
+
 #esercizio 4-8
 
 
@@ -21,6 +26,8 @@
 # for i in cubo:
 #     y=i**3
 #     print(y)
+
+
 
 
 
