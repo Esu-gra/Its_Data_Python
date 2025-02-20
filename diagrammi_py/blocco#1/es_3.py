@@ -3,13 +3,15 @@
 sum=0
 i=1
 
-for i in range(5):
-    n=int(input("inserire numero: "))
-    if n>0:
+for i in range(1,6):
+    n=int(input("Inserire numero: "))
+    if n > 0 :
         sum+=n
-        continue
+        i+=1
+ 
     else:
         i+=1
-        if i >=5:
-            print(sum)
-            break
+        continue
+    if i == 5:
+        print(sum)
+        break
