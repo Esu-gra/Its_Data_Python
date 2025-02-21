@@ -1,7 +1,7 @@
 
 #esrercizio 5-8 e 5-9
 
-users=[]
+users=["ALDO","GIACOMO"]
 len=len(users)
 for i in users:
     if i =="admin":
