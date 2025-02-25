@@ -15,4 +15,7 @@ match oggetti:
   print( "Prodotti alimentari") 
  case oggetti if oggetti==["sedia", "tavolo", "armadio"]:
   print( "Mobili")
- case oggetti if oggetti 
+ case oggetti if oggetti== ["telefono", "computer", "tablet"]:
+    print("Dispositivi elettronici")
+ case _:
+    print("Categoria sconosciuta")
