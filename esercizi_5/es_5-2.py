@@ -16,10 +16,10 @@ print(w.lower())
 
 #uguaglianza 
 
-'''for i in range(23):
+for i in range(23):
     if  i%2==0:
         print(i)
-        '''
+        
 
 
 
