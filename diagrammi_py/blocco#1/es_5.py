@@ -1,6 +1,6 @@
-##Verifica se un numero è primo
+# ##Verifica se un numero è primo
 
-n=int(input("inserire numero: "))
+# n=int(input("inserire numero: "))
 
 
 # for i in len(str(n)):
@@ -9,7 +9,7 @@ n=int(input("inserire numero: "))
 #     else:
 #         div=2
 #         if div<n:
-#             if n%div==0:
+#             if n%1==0:
 #                 print("il numero non è primo")
 #             else:
 #                 div+=1
@@ -17,4 +17,25 @@ n=int(input("inserire numero: "))
 #             print("il numero è primo")
          
 
-         ##da finire##
+#          #da finire##
+
+
+n=int(input("inserire numero: "))
+is_prime=True
+
+while True:
+    if n<2:
+        is_prime=False
+    else:
+        div=2
+        if div <n:
+            if n%div==0:
+                is_prime=True
+            else:
+                div=div+1
+    if is_prime==True:
+        print("il numero è primo")
+        break
+    else:
+        print("il numero non è primo")
+        break
