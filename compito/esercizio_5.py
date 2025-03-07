@@ -4,7 +4,7 @@ n= int(input("inserire euro: "))
 
 
 barretta = n 
-buoni = barretta
+buoni_sconto = barretta
 totale_barrette = barretta
 
 while buoni_sconto >= 6:
