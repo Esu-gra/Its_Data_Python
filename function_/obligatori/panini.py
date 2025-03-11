@@ -5,4 +5,4 @@ def panini_function(*args):
     print(f"panino con: {panino}") 
         
 
-panini_function(panini_function("Cotto","cacio","pommodori"))
+panini_function("Cotto","cacio","pomodori")
