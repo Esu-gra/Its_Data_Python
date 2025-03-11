@@ -1,8 +1,8 @@
 def panini_function(*args):
-    panino=[]
+    panino:str=[]
     for i in args:
         panino.append(i)
     print(f"panino con: {panino}") 
         
 
-panini_function("Cotto","cacio","pomodori")
+panini_function("Humburger","Cheddar","Bacon")

@@ -8,7 +8,6 @@ show_message()
 
 
 def send_messages():
-    print(show_message())
     send_messages=[]
     for i in messages:
         send_messages.append(i)
