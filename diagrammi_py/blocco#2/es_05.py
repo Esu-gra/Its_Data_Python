@@ -8,7 +8,8 @@ n=int(input("inserisci numero: "))
 if n>0:
     sum=0
     i=1
-    while True:
+while True:
+
       if i>=n:
             print(sum)
             break

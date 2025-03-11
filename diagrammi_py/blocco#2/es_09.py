@@ -1,6 +1,6 @@
 
-# Conteggio dei numeri divisibili
-#esercizio 9
+# # Conteggio dei numeri divisibili
+# #esercizio 9
 
 n=int(input("inserire numero: "))
 
