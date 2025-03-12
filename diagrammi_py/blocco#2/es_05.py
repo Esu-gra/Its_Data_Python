@@ -1,24 +1,22 @@
 
 #Calcolo della somma dei quadrati fino a un numero intero positivo n
 
+n=int(input("inserire numero: "))
 
 
-n=int(input("inserisci numero: "))
-
-if n>0:
-    sum=0
-    i=1
-while True:
-
-      if i>=n:
-            print(sum)
-            break
-           
-      else:
+if n%1==0 and n>0:
+      sum=0
+      i=1
+        
+      while i <=n:
             sum=sum+(i*i)
-            i=i+i
-          
-
+            i+=1
+      print(sum) 
+            
+      
+  
 else:
-   
-    print("errore numero deve essere positivo")
+      print("erore n non un numero positivo ")
+
+    
+    

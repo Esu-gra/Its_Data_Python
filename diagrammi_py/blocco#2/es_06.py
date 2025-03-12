@@ -14,32 +14,31 @@
 #     if x%2==0:
 #         somma=n
 
-x=int(input("inserire un valore: "))
-while True:
- if x > 0:
-     i=0
-     sum=0
-     if i==5:
-            print(sum)
-            break
-     else:
-            n=int(input("inserire numero: "))
-           
-            if x % 2 == 0:
-                if n > (x/2):
-                    sum=sum+n
-                else:
-                    i=i+1
-            else:
-                if n < x:
-                    sum = sum + n
-                else:
-                     i=i+1
- else:
-     print("errore ,x deve essere positivo")
-     break
+
+     
    
 
-#da completare 
+x=int(input("inserire un valore: "))
+sum=0
+if x>0:
+    i=0
+    while i<=3:
 
+            n=int(input("inserire numero: "))
+            i+=1
+            if x%2==0:
+                if n>(x/2):
+                    
+                    sum=sum+n
+            
+            else:
+                if n<x:
+                    
+                    sum=sum+n
+    print(sum)
+                    
+        
+else:
+    print("errore , x deve essere positivo")
+            
 
