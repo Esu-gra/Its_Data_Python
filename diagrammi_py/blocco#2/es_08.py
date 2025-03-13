@@ -3,23 +3,23 @@ b=int(input("inserire il secondo numero: "))
 sum=0
 i=a
 
-while True:
-   if a<b:
+
+if a<b:
       if a>0 and b>0:
          if a%1==0 and b%1==0:
             sum=0
             i=a
-            if i>b:
-               print(sum)
-            else:
-               sum=sum+i
-               i=i+1
+            while i>b:
+                i=i+1
+                sum=sum+i
+            print(sum)
+              
 
-         else:
+         elif b<a:
             print("a e b devono essere interi")
-      else:
+      elif a <0 and b <0:
          print("a e b devono essere positivi")
-   else:
+elif a%1!=0 and b%1!=0:
       print("a deve essere minore di b")
 
        
