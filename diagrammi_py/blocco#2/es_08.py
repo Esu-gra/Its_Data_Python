@@ -1,26 +1,25 @@
 a=int(input("inserire il primo numero: "))
 b=int(input("inserire il secondo numero: "))
-sum=0
-i=a
 
 
 if a<b:
-      if a>0 and b>0:
-         if a%1==0 and b%1==0:
-            sum=0
-            i=a
-            while i>b:
-                i=i+1
-                sum=sum+i
-            print(sum)
-              
+    if a>0 and b>0:
+       if a%1==0 and b%1==0:
+           i=a
+           sum=0
+           while i<b:
+               i=i+1
+               sum=sum+i
+               
+           print(sum)
+       else:
+           print("a e b devono essere interi")
+    else:
+           print("a e b devono essere positivi")
+else:
+           print("a  deve essere minore di b")
+        
 
-         elif b<a:
-            print("a e b devono essere interi")
-      elif a <0 and b <0:
-         print("a e b devono essere positivi")
-elif a%1!=0 and b%1!=0:
-      print("a deve essere minore di b")
 
        
 
