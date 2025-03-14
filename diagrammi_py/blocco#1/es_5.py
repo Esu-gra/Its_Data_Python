@@ -3,7 +3,7 @@
 # n=int(input("inserire numero: "))
 
 
-# for i in len(str(n)):
+# for i in len(n):
 #     if n<2:
 #         print("non è primo")
 #     else:
@@ -25,13 +25,14 @@ is_prime=True
 
 while True:
     if n<2:
-        is_prime=False
+        is_prime=True
     else:
         div=2
-        if div <n:
+        if div ==n:
             if n%div==0:
                 is_prime=True
             else:
+                is_prime=False
                 div=div+1
     if is_prime==True:
         print("il numero è primo")
