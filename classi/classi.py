@@ -1,10 +1,12 @@
 #oggetto istanza di una classe
 
 class persona:
+    #costruttore
     def __init__(self,name,eta):
         self.name=name  #attributo di istanza 
         self.eta=eta    #attributo di istanza
-
+        
+    #metodo
     def saluta(self):
         return f"ciao mi chiamo {self.name} e ho {self.eta} anni"
 
