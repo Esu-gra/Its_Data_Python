@@ -8,8 +8,11 @@ class Persona:
         print(f"Nome: {self.nome}\n cognome: {self.cognome}\n età: {self.età}")
 
     #funzione che ci consenta di impostare il valore di self.nome
-    def setName(self,nome:str)->None:
-        self.nome=nome
+    # def setName(self,nome:str)->None:
+    #     self.nome=nome
+
+    def __str__(self):
+        return f"Nome:{self.nome}"
     
     def setCognome(self,cognome:str)->None:
         self.cognome=cognome
