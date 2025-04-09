@@ -5,5 +5,5 @@ cyber_restaurant=Restaurant("UntoBisunto","Birreria")
 Full_restaurant=Restaurant("Stck_Smash","FastFood")
 cloud_restaurant=Restaurant("BBQ","All")
 
-print(cyber_restaurant.describe_resturant())
-print(cyber_restaurant.open_restaurant())
+cyber_restaurant.describe_resturant()
+cyber_restaurant.open_restaurant()

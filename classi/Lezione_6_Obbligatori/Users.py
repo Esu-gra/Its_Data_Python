@@ -18,5 +18,5 @@ Anna=User("Anna","Pippa",23)
 Chiara=User("Chiara","Bianchi",12)
 Carlo=User("Carlo","Polpetta",54)
 
-print(Anna.describe_user())
-print(Anna.greetUser())
+Anna.describe_user()
+Anna.greetUser()
