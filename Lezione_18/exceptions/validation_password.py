@@ -22,7 +22,7 @@ def validete_password(password):
 
 
 try:
-    validete_password("Ab!cD@eF#gHiJkL12345")
+    validete_password("Bb!cD@eF#gHiJkL12345")
     print("Password valida ")
 except ValueError as error:
     print(error)
