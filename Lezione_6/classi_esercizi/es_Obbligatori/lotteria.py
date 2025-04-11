@@ -18,10 +18,19 @@ class LotteriaMacchina:
     
         print(f"{self.biglietto_vincente}: vinve 100 mila euro") 
 
+    def simulate_until_win(self,my_ticket:list):
+        tentativi=0
+        my_ticket.append(self.tenta_fortuna())
+        
+        
 
-lotteria=LotteriaMacchina()
-vincita=lotteria.tenta_fortuna()
-lotteria.messagio_vincente()
+   
+       
+       
+
+# lotteria=LotteriaMacchina()
+# vincita=lotteria.tenta_fortuna()
+# lotteria.messagio_vincente()
    
 
 

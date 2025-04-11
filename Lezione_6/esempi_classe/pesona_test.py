@@ -18,7 +18,7 @@ eg.disply_Data()
 #impostare il nome della persona 
 print("----------------")
 
-eg.setName("Esu")
+eg.setNome("Esu")
 eg.disply_Data()
 
 print("----------------")

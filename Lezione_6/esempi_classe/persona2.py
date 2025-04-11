@@ -11,7 +11,7 @@ class Persona:
     # def setName(self,nome:str)->None:
     #     self.nome=nome
 
-    def __str__(self):
+    def setNome(self):
         return f"Nome:{self.nome}"
     
     def setCognome(self,cognome:str)->None:
