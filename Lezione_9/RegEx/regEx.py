@@ -39,4 +39,10 @@
 #!?  
 
 
+#Boundary 
+
+#  \bparola\b  prende una parola di quel carattere e la stessa lunghezza della parola 
+
+#\B\ prende le sotto stringhe parole che contengono quella parola all'interno della stringa 
+
 
