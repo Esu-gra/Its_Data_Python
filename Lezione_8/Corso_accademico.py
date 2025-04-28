@@ -22,7 +22,7 @@ class Building:
     def __init__(self, name, address, floors):
         self.name = name
         self.address = address
-        self.floors = floors  # es. (1, 10)
+        self.floors = floors  
         self.rooms = []
 
     def get_floors(self):
