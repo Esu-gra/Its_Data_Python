@@ -1,4 +1,5 @@
 {
+
   "RSSMRA80A01H501U": {
     "nome": "Mario",
     "cognome": "Rossi",
@@ -8,5 +9,11 @@
     "nome": "Luca",
     "cognome": "Bianchi",
     "età": 34
+  },
+ "BNCHNA90D50C351T": {
+    "nome": "Anna",
+    "cognome": "Bianchi",
+    "età": 34
   }
+  
 }

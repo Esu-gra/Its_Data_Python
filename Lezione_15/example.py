@@ -67,14 +67,22 @@ import json
 
 
 #esercizio2
-PATH:str="Lezione_15/esercizio/esempio_2.json"
-mode="w"
+# PATH:str="Lezione_15/esercizio/esempio_2.json"
+# mode="w"
 
-with open(PATH,mode=mode) as file:
-    dict_1:dict={"nome":"Esu",
-                 "cognome":"Grappa",
-                 "età":234}
-    json.dump("dict_1",file,indent=4)
+# with open(PATH,mode=mode) as file:
+#     dict_1:dict={"nome":"Esu",
+#                  "cognome":"Grappa",
+#                  "età":234}
+#     json.dump("dict_1",file,indent=4)
     
 
 #esercizio3
+
+PATH:str="Lezione_15/esercizio/esempio_3.json"
+mode="r"
+
+with open(PATH,mode=mode) as file:
+    config:dict = json.load(file)
+    print(config)
+   
