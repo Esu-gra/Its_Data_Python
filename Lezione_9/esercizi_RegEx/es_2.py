@@ -11,7 +11,17 @@ Obiettivo: Lavorare con lettere e lunghezze di stringhe.
 import re
 
 #2.1
-stri="ABBIAMO una parola o PIU parole MAIUSCOlE"
+stri="ABBIAMO una parola o PIU parole MAIUSCOlE chrkcrhorhohpò2"
 maiuscole:str=re.findall(r'\b[A-Z]{2,}',stri)
 
 print(maiuscole)
+
+#2.2
+maiuscole_minuscole=re.findall(r"\b[A-Za-z]{2,}",stri)
+print(maiuscole_minuscole)
+
+#2.3
+
+len_parola:list=re.findall(r'\b[a-zA-Z]{5,10}',stri)
+
+print(len_parola)
