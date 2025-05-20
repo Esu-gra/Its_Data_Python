@@ -17,3 +17,15 @@ funzionamento.
 
 '''
 
+class MathOperations:
+     @staticmethod
+     def add(a:int,b:int):
+          return f"somma: {a+b}"
+     
+     def multiply(x:int,y:int):
+          return f"prodotto: {x*y}"
+
+s=MathOperations
+print(s.add(12,34))
+p=MathOperations
+print(p.multiply(23,45))
