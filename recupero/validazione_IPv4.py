@@ -8,10 +8,27 @@ stringa è un indirizzo IPv4 valido. Un indirizzo IPv4 è composto da quattro nu
 
 
 def is_valid_ipv4(address:str)->bool:
-      
+
+    if len(address)!=4:
+        return False
+    
     for x in address:
-            if x !=".":
-                  x=int(x)
+        if not x.isdigit():
+            return False
+    
+    n=x(int)
+
+    if not (0<=n<=255):
+        return False
+
+    return True
+    
+
+
+
+    
+      
+ 
     
     
             
