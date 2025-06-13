@@ -9,26 +9,29 @@ stringa è un indirizzo IPv4 valido. Un indirizzo IPv4 è composto da quattro nu
 
 def is_valid_ipv4(address:str)->bool:
 
-    if len(address)!=4:
+    x=address.split(".")
+
+
+    if len(x)!=4:
         return False
     
-    for x in address:
-        if not x.isdigit():
+    for i in x:
+        if not i.isdigit():
             return False
     
-    n=x(int)
+        n=int(i)
 
-    if not (0<=n<=255):
-        return False
+        if not (0<=n<=255):
+            return False
+          
 
     return True
     
+ 
 
-
-
+print(is_valid_ipv4("192.168.0.1"))
     
-      
+  
  
     
     
-            

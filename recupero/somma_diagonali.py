@@ -40,3 +40,16 @@ def sum_secondary_diagonal(matrix)->int:
 
 
 print(sum_secondary_diagonal(mat1))
+
+
+
+def primary_diag(m:list[list[int]])->int:
+    somma:int=0
+    somma_2:int=0
+
+    for i in range(len(m)):
+        somma+=m[i][i]
+        somma_2+=m[i][len(m)-1-i]
+    return somma
+
+print(primary_diag(mat1))
