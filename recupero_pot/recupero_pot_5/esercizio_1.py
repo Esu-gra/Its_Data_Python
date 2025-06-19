@@ -50,7 +50,8 @@ def caricoNullo(mat:list[list[int]])->list:
     for r in range(dim):
         for c in range(dim):
             if calcolaCarico(mat,r,c)==0:
-                posizioni.append(r,c)
+                posizioni.append(r)
+                posizioni.append(c)
     return posizioni
 
 
@@ -83,14 +84,6 @@ def caricoMinimo(mat:list[list[int]]):
 
 
 
-pdim=5
-mat=mat_quadrata(pdim)
-
-print(printMAT(mat))
-print(calcolaCarico(mat,4,4))
-
-nulle =caricoMax(mat)
-print(caricoMinimo(mat))
 
 
 matrice = mat_quadrata(5)
@@ -98,7 +91,8 @@ print("Matrice generata:")
 printMAT(matrice)
 
 nulle = caricoNullo(matrice)
-print(f"\nPosizioni a carico nullo ({len(nulle)}): {nulle}")
+n_nullo=len(nulle)
+print(f"\nPosizioni a carico nullo ({n_nullo}): {nulle}")
 
 rmax, cmax = caricoMax(matrice)
 print(f"Indice carico massimo: ({rmax}, {cmax})")
