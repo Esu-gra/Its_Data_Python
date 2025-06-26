@@ -155,11 +155,9 @@ def proclamaVincitore(c:Creatura):
             print("*"  + " "*4+contenuto+" "*(larghezza-5-len(contenuto)-1)+"*")
         else:
             print("*"+" "* (larghezza-2)+"*")
-alieno = Alieno()
-mostro = Mostro("Zorg", "VINTOOOOO!", "Nooo...")
 
-vincitore = combattimento(alieno, mostro)
-print("Vincitore:", vincitore)
+
+
 
 
 

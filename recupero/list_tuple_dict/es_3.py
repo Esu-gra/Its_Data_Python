@@ -10,9 +10,8 @@ a due cifre decimali
 
 def new_dict(dic:dict)->dict:
     dic_1={}
-    
     for k,v in dic.items():
-        a=(10/100)*v
+        # a=(10/100)*v
         if v < 50 : 
             prezzo_aumento=round(v*1.10,2)
             dic_1[k]=prezzo_aumento
