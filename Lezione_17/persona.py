@@ -3,10 +3,10 @@ class Persona:
     _last_name:str
     _età:int
 
-    def __init__(self,first_name:str,last_name:str):
+    def __init__(self,first_name:str,last_name:str,eta:int):
         self.set_name(first_name)
         self.set_last_name(last_name)
-        self._età:int=self.set_età()
+        self._età:int=self.set_età(eta)
         
     
 

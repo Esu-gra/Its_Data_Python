@@ -4,9 +4,9 @@ class Paziente(Persona):
    _codice:str
 
 
-   def __init__(self, first_name, last_name):
-      self._codice:str=self.set_codice()
-      super().__init__(first_name, last_name)
+   def __init__(self, first_name, last_name,codice:str):
+      self._codice:str=self.set_codice(codice)
+      super().__init__(first_name, last_name,codice)
 
     
 

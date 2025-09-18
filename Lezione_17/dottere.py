@@ -3,12 +3,12 @@ from persona import Persona
 class Dottore(Persona):
     _specializzazione:str
     _parcella:float
-    def __init__(self, first_name, last_name):
-        self._specializzazione:str=self.set_special()
-        self._parcella:float=self.set_parcella()
+    def __init__(self,first_name, last_name,eta,parcella:float,specializzazione:str):
+        self._specializzazione:str=self.set_special(specializzazione)
+        self._parcella:float=self.set_parcella(parcella)
         
 
-        super().__init__(first_name, last_name)
+        super().__init__(first_name, last_name,eta)
 
     
     def set_special(self,sp:str):
