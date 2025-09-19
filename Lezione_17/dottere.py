@@ -3,27 +3,30 @@ from persona import Persona
 class Dottore(Persona):
     _specializzazione:str
     _parcella:float
-    def __init__(self,first_name, last_name,eta,parcella:float,specializzazione:str):
-        self._specializzazione:str=self.set_special(specializzazione)
-        self._parcella:float=self.set_parcella(parcella)
+    def __init__(self,first_name, last_name,eta,specializzazione:str,parcella:float):
+        super().__init__(first_name, last_name)
+        self.set_età(eta)
         
+        self._specializzazione=None
+        self._parcella=None
 
-        super().__init__(first_name, last_name,eta)
+        self.set_special(specializzazione)
+        self.set_parcella(parcella)
+
 
     
     def set_special(self,sp:str):
         if isinstance(sp,str):
             self._specializzazione=sp
         else:
-            self._specializzazione=None
-            return "La specializzazione inserita non è una stringa!"
+            print("La specializzazione inserita non è una stringa!")
     
     def set_parcella(self,p:float):
         if isinstance(p,float):
             self._parcella=p
         else:
             self._parcella=None
-            return "La parcella inserita non è un float!"
+            print("La parcella inserita non è un float!")
     
     def specializzazione(self)->str|None:
         return self._specializzazione
@@ -33,13 +36,13 @@ class Dottore(Persona):
 
     
     def valid_doctor(self)->bool:
-        if self._età>=30:
-            print("Doctor nome e cognome is valid!")
+        if self.età()!=None and self._età>=30:
+            print(f"Doctor {self.name()} {self.last_name()} is valid!")
             return True
-        print("Doctor nome e cognome is not valid!")
+        print(f"Doctor {self.name()} {self.last_name()} non è valido")
         return False
     
     def doctorGreet(self)->str:
-        return f"{self.greet()}  Sono un medico {self.specializzazione()}"
+        print(f"{self.greet()}  Sono un medico {self.specializzazione()}")
     
 

@@ -129,3 +129,12 @@ if __name__ == '__main__':
             
 
 
+def cerca_valore(matrice:list[list[int]],valore:int)->list[tuple]:
+    posizioni:list[tuple]=list()
+    for riga in range(len(matrice)):
+        for colonna in range(len(matrice[riga])):
+
+            if matrice[riga][colonna] == valore:
+
+                posizioni.append((riga,colonna))
+    return posizioni

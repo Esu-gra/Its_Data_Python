@@ -5,9 +5,9 @@ class Fattura:
     _dottore:Dottore
     _fatture:int
 
-    def __init__(self,paziente:list[Paziente],dottore:Dottore):
+    def __init__(self,pazienti:list[Paziente],dottore:Dottore):
      if dottore.valid_doctor():
-        self._pazienti:list=paziente
+        self._pazienti:list=pazienti
         self._dottore:Dottore=dottore
         self._fatture:int=len(self._pazienti)
         self._salary:int=0

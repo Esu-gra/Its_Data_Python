@@ -4,9 +4,11 @@ class Paziente(Persona):
    _codice:str
 
 
-   def __init__(self, first_name, last_name,codice:str):
+   def __init__(self, first_name, last_name,eta,codice:str):
       self._codice:str=self.set_codice(codice)
-      super().__init__(first_name, last_name,codice)
+      super().__init__(first_name, last_name)
+      self.set_età(eta)
+      self._codice=self.set_codice(codice)
 
     
 
@@ -22,7 +24,7 @@ class Paziente(Persona):
    
 
    def paziente_info(self)->str:
-       return f"Paziente: {self.name()} {self.last_name()}\n{self.codice()}"
+       return f"Paziente: {self.name()} {self.last_name()}\nCodice:{self.codice()}"
 
         
       

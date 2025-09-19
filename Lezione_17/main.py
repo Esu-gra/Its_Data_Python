@@ -1,39 +1,38 @@
 from dottere import Dottore
-from fattura import Fattura
 from paziente import Paziente
+from fattura import Fattura
 
-# Creo pazienti
-p1 = Paziente("Lorenzo", "Pola", "c1")
-p2 = Paziente("Edo", "Saola", "c2")
-p3 = Paziente("Ciccio", "Palla", "c3")
-p4 = Paziente("Pippo", "Tanto", "c4")
+# Creo i dottori
+dottore1 = Dottore("Mario", "Rossi", 45, "Cardiologo", 100.0)
+dottore2 = Dottore("Luca", "Bianchi", 50, "Pediatra", 80.0)
 
-l1 = [p2, p3, p4]
-l2 = [p1]
+# Creo i pazienti
+p1 = Paziente("Giulia", "Verdi", 30, "P001")
+p2 = Paziente("Marco", "Neri", 40, "P002")
+p3 = Paziente("Anna", "Galli", 25, "P003")
+p4 = Paziente("Sara", "Russo", 20, "P004")
 
-# Creo dottori (attenzione all'ordine: nome, cognome, età, parcella, specializzazione)
-d1 = Dottore("Giggi", "Poldo", 40, 340.0, "Chirurgo")
-d2 = Dottore("Nino", "D'Angelo", 45, 250.0, "Pediatra")
+lista_pazienti1 = [p1, p2, p3]
+lista_pazienti2 = [p4]
 
 # Saluto dei dottori
-print(d1.doctorGreet())
-print(d2.doctorGreet())
+dottore1.doctorGreet()
+dottore2.doctorGreet()
 
-# Creo fatture
-fattura1 = Fattura(l1, d1)
-fattura2 = Fattura(l2, d2)
+# Creo le fatture
+fattura1 = Fattura(lista_pazienti1, dottore1)
+fattura2 = Fattura(lista_pazienti2, dottore2)
 
+# Stampo i salari
 print(f"Salario Dottore1: {fattura1.get_salary()} euro!")
 print(f"Salario Dottore2: {fattura2.get_salary()} euro!")
 
-# Rimuovo un paziente da dottore 1 e lo aggiungo a dottore 2
-p_to_move = l1.pop(0)  # tolgo il primo paziente da l1
-l2.append(p_to_move)
+# Rimuovo un paziente dal dottore1 e lo aggiungo a dottore2
+fattura2.addPaziente(p2)
+fattura1.removePaziente("P002")
 
-# Aggiorno fatture
-fattura1 = Fattura(l1, d1)
-fattura2 = Fattura(l2, d2)
 
+# Stampo i nuovi salari
 print(f"Salario Dottore1: {fattura1.get_salary()} euro!")
 print(f"Salario Dottore2: {fattura2.get_salary()} euro!")
 
