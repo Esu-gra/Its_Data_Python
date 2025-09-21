@@ -3,7 +3,11 @@ from film import *
 from noleggio import *
 
 
+
 f1=Dramma(1,"La maga")
+
+
+
 
 f2=Azione(2,"Balla")
 f3=Azione(23,"Gallo")
@@ -22,12 +26,13 @@ n=Noleggio(film_list)
 
 print("Quale film vuoi noleggaiare ?")
 n.isAvaible(f4)
-n.isAvaible(f6)
+n.rentAMovie(f6,"c1")
 n2=Noleggio(film_list)
 
 n2.isAvaible(f6)
 n2.isAvaible(f9)
+n2.rentAMovie(f6,"c2")
+n.givBack(f6,"c2",2)
 
-n.givBack(f6,n,2)
-
-print(n._film_list)
+# print([str(n) for n in film_list])
+n.printMovies()

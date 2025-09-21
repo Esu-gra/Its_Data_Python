@@ -1,5 +1,6 @@
-
 from movie_genre import *
+from film import Film
+
 
 class Noleggio:
     _film_list:list=[Azione,Dramma,Commedia]
@@ -21,11 +22,13 @@ class Noleggio:
             False
     
 
-    def rentAMovie(self,film,clientID):
-        if film in self._film_list:
+    def rentAMovie(self,film:Film,clientID):
+        if  self.isAvaible(film):
             self._film_list.remove(film)
-            self._rented_film[clientID]=[]
-            print(f"Il cliente {clientID} ha noleggiato {film}!")
+            if clientID not in self._rented_film:
+               self._rented_film[clientID]=[]
+            self._rented_film[clientID]=[].append(film)
+            print(f"Il cliente {clientID} ha noleggiato {film.getTitle()}!")
         else:
             print(f"Non è possibile nolegiare il film {film}!")
         
@@ -43,11 +46,14 @@ class Noleggio:
                 film.calcolaPenaleRitardo(days)
             print(f"Cliente: {clientID}! La penale da pagare per il film {film} e' di {film._penale} euro!")
                  
+    def printMovies(self):
+        print("Film disponibili in negozio: ")
+        for film in self._film_list:
+            print(f"{film.getTitle()} - {film.getGenere()}")
 
-            
+
 
         
-
-
+# 
 
         

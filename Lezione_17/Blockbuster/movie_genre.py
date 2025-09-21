@@ -11,7 +11,10 @@ class Azione(Film):
 
 
         super().__init__(id, titolo)
+    
 
+    def __str__(self):
+        return self._titolo
     
     def getGenere(self)->"Azione":
         return self._genere
@@ -36,7 +39,9 @@ class Commedia(Film):
 
 
         super().__init__(id, titolo)
-
+    
+    def __str__(self):
+        return self._titolo
     
     def getGenere(self)->"Commedia":
         return self._genere
@@ -62,7 +67,10 @@ class Dramma(Film):
 
         super().__init__(id, titolo)
 
+    def __str__(self):
+        return self._titolo
     
+
     def getGenere(self)->"Dramma":
         return self._genere
     

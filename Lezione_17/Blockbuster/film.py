@@ -4,7 +4,7 @@ class Film:
 
     def __init__(self,id:int,titolo:str):
         self.setID(id)
-        self._titolo=titolo
+        self.setTitle(titolo)
 
     def setID(self,i:int):
         self._identificativo=i
