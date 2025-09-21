@@ -4,7 +4,7 @@ from fattura import Fattura
 
 # Creo i dottori
 dottore1 = Dottore("Mario", "Rossi", 45, "Cardiologo", 100.0)
-dottore2 = Dottore("Luca", "Bianchi", 50, "Pediatra", 80.0)
+dottore2 = Dottore("Luca", "Bianchi", 29, "Pediatra", 80.0)
 
 # Creo i pazienti
 p1 = Paziente("Giulia", "Verdi", 30, "P001")
